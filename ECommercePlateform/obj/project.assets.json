@@ -2270,11 +2270,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Caroline\\Documents\\John Abbott\\Application Dev2\\e-commerce-website\\ECommercePlateform\\ECommercePlateform\\ECommercePlateform.csproj",
+      "projectUniqueName": "C:\\Users\\Caroline\\Documents\\John Abbott\\Application Dev2\\e-commerce-website\\ECommercePlateform\\ECommercePlateform.csproj",
       "projectName": "ECommercePlateform",
-      "projectPath": "C:\\Users\\Caroline\\Documents\\John Abbott\\Application Dev2\\e-commerce-website\\ECommercePlateform\\ECommercePlateform\\ECommercePlateform.csproj",
+      "projectPath": "C:\\Users\\Caroline\\Documents\\John Abbott\\Application Dev2\\e-commerce-website\\ECommercePlateform\\ECommercePlateform.csproj",
       "packagesPath": "C:\\Users\\Caroline\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Caroline\\Documents\\John Abbott\\Application Dev2\\e-commerce-website\\ECommercePlateform\\ECommercePlateform\\obj\\",
+      "outputPath": "C:\\Users\\Caroline\\Documents\\John Abbott\\Application Dev2\\e-commerce-website\\ECommercePlateform\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Caroline\\AppData\\Roaming\\NuGet\\NuGet.Config",
