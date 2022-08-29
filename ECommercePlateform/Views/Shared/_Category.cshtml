@@ -1,0 +1,17 @@
+﻿@model IEnumerable<ECommercePlateform.Models.Category>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h2>Categories</h2>
+
+<div>
+    @foreach(var item in Model)
+    {
+        <img src="/media/@item.CategoryName/CategoryImage" />
+        <h3>@item.CategoryName</h3>
+        <a asp-controller="" asp-action="">View products</a>
+    }
+</div>

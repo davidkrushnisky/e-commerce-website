@@ -1,11 +1,19 @@
-﻿namespace ECommercePlateform.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace ECommercePlateform.Models
 {
     public class Order
     {
         public int OrderId { get; set; }
-        public int UserId { get; set; }
-        public ICollection<int> Products { get; set; }
         public decimal TotalPrice { get; set; }
         public DateTime OrderDate { get; set; }
+
+        //Many-to-one
+        public User User { get; set; }
+        [InverseProperty("UserId")]
+        public int UserId { get; set; }
+        //many-to-many
+        [InverseProperty("ProductId")]
+        public ICollection<Product> Products { get; set; }
     }
 }
