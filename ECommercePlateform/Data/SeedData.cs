@@ -428,6 +428,108 @@ namespace ECommercePlateform.Data
                         Pictures = unicomp,
                         Description = "The New Model M buckling spring keyboard has the same mechanism, feel and layout as the original IBM Model M keyboard, but with a slightly smaller footprint. With the much-loved buckling spring key design these keyboards have been prized by computer enthusiasts and robust typists because of the tactile and auditory feedback of each keystroke.",
                         Categories = "Keyboards"
+                    },
+
+                    //Monitors
+                    new Product
+                    {
+                        Name = "Acer Predator X38",
+                        Price = 1399.99M,
+                        Color = "Black",
+                        Quantity = 4,
+                        Pictures = predator,
+                        Description = "Infused with Agile-splendor IPS and its 0.31ms GtG response, 175Hz refresh2 and a 2300R curve – the Predator X38 transports you to a realm of 21:9 immersion. And with NVIDIA® G-SYNC® at the helm, expect smooth, tear-free gaming as the new norm.",
+                        Categories = "Monitors"
+                    },
+                    new Product
+                    {
+                        Name = "Alienware 34 QD-OLED (AW3423DW)",
+                        Price = 1649.99M,
+                        Color = "Black",
+                        Quantity = 9,
+                        Pictures = alienware,
+                        Description = "The world's first QD-OLED gaming monitor. Featuring infinite contrast ratio and VESA DisplayHDR TrueBlack 400 for remarkably vivid colors and visuals bursting to life.",
+                        Categories = "Monitors"
+                    },
+                    new Product
+                    {
+                        Name = "Dell 27 Curved Gaming Monitor",
+                        Price = 349.99M,
+                        Color = "Black",
+                        Quantity = 10,
+                        Pictures = dellS2,
+                        Description = "27\" QHD Curved Gaming Monitor with 1ms (MPRT)/ 2ms (gray to gray) response time, 165Hz refresh rate and 99% sRGB color for sharp gaming visuals and immersive gameplay.",
+                        Categories = "Monitors"
+                    },
+                    new Product
+                    {
+                        Name = "Dell 32 Curved Gaming Monitor",
+                        Price = 670.91M,
+                        Color = "Black",
+                        Quantity = 15,
+                        Pictures = dellS3,
+                        Description = "31.5\" QHD Curved Gaming Monitor with 1ms (MPRT)/ 2ms (gray to gray) response time, 165Hz refresh rate and 99% sRGB color for sharp gaming visuals and immersive gameplay.",
+                        Categories = "Monitors"
+                    },
+                    new Product
+                    {
+                        Name = "GIGABYTE M-U Gaming Monitor",
+                        Price = 650.31M,
+                        Color = "Black",
+                        Quantity = 10,
+                        Pictures = m28u,
+                        Description = "Compete like a pro with the crisp and unbeatable performance of the GIGABYTE M28U Gaming Monitor. Featuring a 28-inch screen monitor with an IPS panel and Ultra-HD 3840p x 2160p maximum resolution, experience your games in a stunning display. Powered by AMD FreeSync™ Premium Pro, experience smooth HDR performance with 2ms response time and 144Hz refresh rate. With its 8-bit color depth, convenient KVM switch, and various gaming features, enjoy your favorite games in high detail.",
+                        Categories = "Monitors"
+                    },
+                    new Product
+                    {
+                        Name = "G27Q Gaming Monitor",
+                        Price = 219.99M,
+                        Color = "Black",
+                        Quantity = 5,
+                        Pictures = g27q,
+                        Description = "Fearlessly charge into battle with the stunning visuals of the GIGABYTE G27Q Gaming Monitor, a 27-inch screen monitor with an IPS panel that features Quad HD 2560p x 1440p maximum resolution for a stunning display. Powered by AMD FreeSync™ Premium, experience detailed display quality with 1ms response time and 144Hz refresh rate. With its 8-bit color depth, 90% DCI-P3 super wide-gamut color, and various gaming features, secure your victory in every game.",
+                        Categories = "Monitors"
+                    },
+                    new Product
+                    {
+                        Name = "RLG UltraGear GN950",
+                        Price = 599.99M,
+                        Color = "Black",
+                        Quantity = 8,
+                        Pictures = lg,
+                        Description = "High-performance, pro-level gaming. Even if you’re not a pro gamer, you’ll feel like one with LG’s 27” UltraGear monitor. The 1ms Nano IPS with UHD 4K resolution and VESA DisplayHDR 600, it combines color intensity and purity with ultra-fast 1ms response rates time and 144Hz refresh rate. Featuring custom gaming control, RGB sphere lighting, and NVIDIA G-SYNC compatibility with AMD FreeSync Premium Pro to minimize tearing and stutter — it's cutting-edge tech to give you the edge.\r\n",
+                        Categories = "Monitors"
+                    },
+                    new Product
+                    {
+                        Name = "MSI Oculux NXG-3R",
+                        Price = 525.76M,
+                        Color = "Black",
+                        Quantity = 6,
+                        Pictures = msi,
+                        Description = "NVIDIA G-SYNC displays deliver unparalleled 360 Hz gameplay, making them the choice for esports enthusiasts everywhere. Experience low system latency for faster reaction times, practically no ghosting, and smooth motion to help stay on target. Add in zero tearing with G-SYNC, and it's clear why these displays are designed to win.",
+                        Categories = "Monitors"
+                    },
+                    new Product
+                    {
+                        Name = "Pixio PX-7",
+                        Price = 339.99M,
+                        Color = "Black",
+                        Quantity = 10,
+                        Pictures = pixio,
+                        Description = "The PX277 monitor is a 27inch monitor with tons of features. The immersive 2560 x 1440p WQHD (Wide Quad High Definition, 2k) display will provide you with stunning and crisp visuals. Super slim bezel-less design is finished in completely matte black color. The fast 144Hz refresh rate enables liquid smooth seamless images.",
+                        Categories = "Monitors"
+                    },
+                    new Product
+                    {
+                        Name = "Samsung Odyssey Neo G9",
+                        Price = 2019.99M,
+                        Color = "Black",
+                        Quantity = 4,
+                        Pictures = odyssey,
+                        Description = "Built with all the needed features to match your gaming beast, the Samsung Odyssey Neo G9 WQHD curved gaming monitor certainly does not disappoint. It boasts a 49\" curved VA panel in WQHD resolution for hypnotic visuals. It also includes a 240Hz refresh rate, Quantum HDR 2000, Quantum Matrix technology, and tilt/swivel/height adjustment for viewing convenience.",
+                        Categories = "Monitors"
                     }
                 );
                 context.SaveChanges();
@@ -458,10 +560,10 @@ namespace ECommercePlateform.Data
                 context.SaveChanges();
             }
 
-            if (!context.Orders.Any())
+            /*if (!context.Orders.Any())
             {
                 context.SaveChanges();
-            }
+            }*/
         }
     }
 }
