@@ -271,3 +271,4 @@ C:\Users\Caroline\Documents\John Abbott\Application Dev2\e-commerce-website\ECom
 C:\Users\Caroline\Documents\John Abbott\Application Dev2\e-commerce-website\ECommercePlateform\obj\Debug\net6.0\ref\ECommercePlateform.dll
 C:\Users\Caroline\Documents\John Abbott\Application Dev2\e-commerce-website\ECommercePlateform\obj\Debug\net6.0\ECommercePlateform.pdb
 C:\Users\Caroline\Documents\John Abbott\Application Dev2\e-commerce-website\ECommercePlateform\obj\Debug\net6.0\ECommercePlateform.genruntimeconfig.cache
+C:\Users\Caroline\Documents\John Abbott\Application Dev2\e-commerce-website\ECommercePlateform\obj\Debug\net6.0\ECommercePlateform.csproj.AssemblyReference.cache

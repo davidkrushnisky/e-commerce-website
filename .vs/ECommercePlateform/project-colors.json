@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "2d41ee01-e3f7-45ab-b3d2-d1b08ec242cd": {
+      "ProjectGuid": "2d41ee01-e3f7-45ab-b3d2-d1b08ec242cd",
+      "DisplayName": "ECommercePlateform",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "f8a9d18d-235e-452d-a566-58b198c919c9": {
+      "ProjectGuid": "f8a9d18d-235e-452d-a566-58b198c919c9",
+      "DisplayName": "InClass2Identity",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
