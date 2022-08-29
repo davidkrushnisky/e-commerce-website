@@ -26,7 +26,9 @@ using (var scope = app.Services.CreateScope())
 	var context = services.GetRequiredService<ApplicationDbContext>();
 	var userManager = services.GetRequiredService<UserManager<ApplicationUser>>();
 	var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
+	var testUserPw = builder.Configuration.GetValue<string>("SeedUserPW");
 	await ContextSeed.SeedRolesAsync(userManager, roleManager);
+	await ContextSeed.SeedDBAsync(context, userManager, roleManager, testUserPw);
 
 }
 
