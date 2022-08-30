@@ -9,11 +9,11 @@ namespace ECommercePlateform.Models
         public DateTime OrderDate { get; set; }
         public ApplicationUser User { get; set; }
 
-        [InverseProperty("UserId")]
+        //[InverseProperty("UserId")]
         public int UserId { get; set; }
 
         //many-to-many
-        [InverseProperty("ProductId")]
+        //[InverseProperty("Product")]
         public ICollection<Product> Products { get; set; }
     }
 }
