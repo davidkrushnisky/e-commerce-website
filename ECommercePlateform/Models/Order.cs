@@ -16,5 +16,8 @@ namespace ECommercePlateform.Models
         //many-to-many
         //public ICollection<Product> Products { get; set; }
 
+        //many-to-many
+        [InverseProperty("ProductId")]
+        public ICollection<Product> Products { get; set; }
     }
 }
