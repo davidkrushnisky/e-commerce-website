@@ -5,7 +5,32 @@
       "ProjectGuid": "2d41ee01-e3f7-45ab-b3d2-d1b08ec242cd",
       "DisplayName": "ECommercePlateform",
       "ColorIndex": 0
+    },
+    "a04b8b4d-0fac-4dd9-a8dd-e8c932b12cb1": {
+      "ProjectGuid": "a04b8b4d-0fac-4dd9-a8dd-e8c932b12cb1",
+      "DisplayName": "ContosoUniversity_DavidKrushnisky",
+      "ColorIndex": 1
+    },
+    "375e07ca-2d02-4ffa-aa6c-996c4d89a622": {
+      "ProjectGuid": "375e07ca-2d02-4ffa-aa6c-996c4d89a622",
+      "DisplayName": "InClass2Identity",
+      "ColorIndex": 2
+    },
+    "1f567fc3-eba3-4309-8c6b-e914b7de0195": {
+      "ProjectGuid": "1f567fc3-eba3-4309-8c6b-e914b7de0195",
+      "DisplayName": "ContosoUniversity_DavidKrushnisky",
+      "ColorIndex": 3
+    },
+    "406ba51b-0859-4cf5-a573-e3c8e3b486f0": {
+      "ProjectGuid": "406ba51b-0859-4cf5-a573-e3c8e3b486f0",
+      "DisplayName": "Recipe_DavidKrushnisky",
+      "ColorIndex": 4
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 5
 }
