@@ -22,13 +22,15 @@ using (var scope = app.Services.CreateScope())
 {
 	var services = scope.ServiceProvider;
 	var loggerFactory = services.GetRequiredService<ILoggerFactory>();
-    
 	var context = services.GetRequiredService<ApplicationDbContext>();
+	context.Database.Migrate();
 	var userManager = services.GetRequiredService<UserManager<ApplicationUser>>();
 	var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
 	var testUserPw = builder.Configuration.GetValue<string>("SeedUserPW");
 	await ContextSeed.SeedRolesAsync(userManager, roleManager);
-	await ContextSeed.SeedDBAsync(context, userManager, roleManager, testUserPw);
+	await ContextSeed.SeedAdminAsync(userManager, roleManager, testUserPw);
+	await ContextSeed.SeedClientAsync(userManager, roleManager, testUserPw);
+	await ContextSeed.SeedDBAsync(context);
 
 }
 

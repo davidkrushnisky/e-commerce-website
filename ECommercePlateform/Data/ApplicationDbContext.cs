@@ -48,6 +48,7 @@ namespace ECommercePlateform.Data
                 entity.ToTable("UserTokens");
             });
 
+            /*
             //Many-to-many
             //Many Products with many orders
             builder.Entity<Order>()
@@ -60,7 +61,8 @@ namespace ECommercePlateform.Data
             builder.Entity<Order>()
                 .HasOne(s => s.User)
                 .WithMany(c => c.Orders)
-                .HasForeignKey(s => s.UserId);
+                .HasForeignKey(s => s.Id);
+            */
 
         }
     }
