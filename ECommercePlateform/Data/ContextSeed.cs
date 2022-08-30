@@ -70,11 +70,6 @@ namespace ECommercePlateform.Data
                 await userManager.AddToRoleAsync(defaultClient, Enums.Roles.Client.ToString());
             }
             
-            else
-            {
-                throw new Exception("The user already exists");
-            }
-            
  
         }
 
@@ -190,26 +185,28 @@ namespace ECommercePlateform.Data
             byte[] image9m = GetImage("media/Monitors/Samsung_Odyssey_Neo_G9.jpg");
             byte[] image10m = GetImage("media/Monitors/Pixio_PX277_Prime.png");
 
-                Collection<byte[]> predator = new Collection<byte[]>();
-                Collection<byte[]> alienware = new Collection<byte[]>();
-                Collection<byte[]> dellS3 = new Collection<byte[]>();
-                Collection<byte[]> dellS2 = new Collection<byte[]>();
-                Collection<byte[]> m28u = new Collection<byte[]>();
-                Collection<byte[]> g27q = new Collection<byte[]>();
-                Collection<byte[]> lg = new Collection<byte[]>();
-                Collection<byte[]> msi = new Collection<byte[]>();
-                Collection<byte[]> odyssey = new Collection<byte[]>();
-                Collection<byte[]> pixio = new Collection<byte[]>();
-                predator.Add(image1m);
-                alienware.Add(image2m);
-                dellS3.Add(image3m);
-                dellS2.Add(image4m);
-                m28u.Add(image5m);
-                g27q.Add(image6m);
-                lg.Add(image7m);
-                msi.Add(image8m);
-                odyssey.Add(image9m);
-                pixio.Add(image10m);
+            /*
+            Collection<byte[]> predator = new Collection<byte[]>();
+            Collection<byte[]> alienware = new Collection<byte[]>();
+            Collection<byte[]> dellS3 = new Collection<byte[]>();
+            Collection<byte[]> dellS2 = new Collection<byte[]>();
+            Collection<byte[]> m28u = new Collection<byte[]>();
+            Collection<byte[]> g27q = new Collection<byte[]>();
+            Collection<byte[]> lg = new Collection<byte[]>();
+            Collection<byte[]> msi = new Collection<byte[]>();
+            Collection<byte[]> odyssey = new Collection<byte[]>();
+            Collection<byte[]> pixio = new Collection<byte[]>();
+            predator.Add(image1m);
+            alienware.Add(image2m);
+            dellS3.Add(image3m);
+            dellS2.Add(image4m);
+            m28u.Add(image5m);
+            g27q.Add(image6m);
+            lg.Add(image7m);
+            msi.Add(image8m);
+            odyssey.Add(image9m);
+            pixio.Add(image10m);
+            */
 
             context.Products.AddRange(
                 new Product
