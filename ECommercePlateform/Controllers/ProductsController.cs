@@ -175,7 +175,10 @@ namespace ECommercePlateform.Controllers
             }
 
             //await applicationDbContext.ToListAsync().
-
+            var product = await _context.Products
+                .Include(p => p.Category)
+                .FirstOrDefaultAsync(m => m.CategoryId == id);
+            ViewData["CategoryName"] = product.Category.CategoryName;
             return View(productByCategory);
         }
 

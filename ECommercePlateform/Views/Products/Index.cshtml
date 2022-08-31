@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<ECommercePlateform.Models.Product>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "All Products";
 }
 
-<h1>@Html.DisplayNameFor(model => model.Category.CategoryName)</h1>
+<h1>@ViewData["Title"]</h1>
 
 @*<p>
     <a asp-action="Create">Create New</a>
