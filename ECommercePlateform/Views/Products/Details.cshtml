@@ -1,4 +1,8 @@
-﻿@model ECommercePlateform.Models.Product
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<ApplicationUser> SignInManager
+@model ECommercePlateform.Models.Product
+
+
 
 @{
     ViewData["Title"] = "Details";
@@ -19,9 +23,17 @@
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Price)
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Price)
-        </dd>
+        @if (SignInManager.IsSignedIn(User))
+        {
+            <dd class = "col-sm-10">
+                @Html.DisplayFor(model => model.Price)
+            </dd>
+        }
+        else {
+            <dd class="col-sm-10">
+                <a class="nav-link nav-link" asp-area="Identity" asp-page="/Account/Login">Please sign in to view the price.</a>
+            </dd>
+        }
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Color)
         </dt>
@@ -38,7 +50,7 @@
             @Html.DisplayNameFor(model => model.Pictures)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Pictures)
+            <img src="data:image;base64,@System.Convert.ToBase64String(@Model.Pictures)" />
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Description)
@@ -55,6 +67,5 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.ProductId">Edit</a> |
     <a asp-action="Index">Back to List</a>
 </div>

@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ECommercePlateform.Data;
 using ECommercePlateform.Models;
+using Microsoft.EntityFrameworkCore.ChangeTracking.Internal;
 
 namespace ECommercePlateform.Controllers
 {
@@ -158,6 +159,44 @@ namespace ECommercePlateform.Controllers
             
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
+        }
+
+        public async Task<IActionResult> ProductsOfCategory(int? id)
+        {
+            if (id == null || _context.Products == null)
+            {
+                return NotFound();
+            }
+            
+            var productByCategory = _context.Products.Include(p => p.Category).Where(p => p.CategoryId == id);
+            if (productByCategory == null)
+            {
+                return NotFound();
+            }
+
+            //await applicationDbContext.ToListAsync().
+
+
+            return View(productByCategory);
+        }
+
+        public async Task<IActionResult> Filter(int? id)
+        {
+            if (id == null || _context.Products == null)
+            {
+                return NotFound();
+            }
+
+            var productByCategory = _context.Products.Include(p => p.Category).Where(p => p.CategoryId == id);
+            if (productByCategory == null)
+            {
+                return NotFound();
+            }
+
+            //await applicationDbContext.ToListAsync().
+
+
+            return View(productByCategory);
         }
 
         private bool ProductExists(int id)
