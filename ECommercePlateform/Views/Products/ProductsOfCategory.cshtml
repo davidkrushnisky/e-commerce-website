@@ -5,18 +5,9 @@
 }
 
 <h1>@ViewData["CategoryName"]</h1>
-<div class="dropdown">
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-        Filter By Category
-    </button>
-    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-        <a class="btn btn-primary">View Details</a>
-        <li><a class="dropdown-item" asp-controller="Products" asp-action="ProductsOfCategory" asp-route-id=1>Headphones</a></li>
-        <li><a class="dropdown-item" asp-controller="Products" asp-action="ProductsOfCategory" asp-route-id=2>Keyboards</a></li>
-        <li><a class="dropdown-item" asp-controller="Products" asp-action="ProductsOfCategory" asp-route-id=3>Monitors</a></li>
-        <li><a class="dropdown-item" asp-controller="Products" asp-action="Index" asp-route-id=3>View All</a></li>
-    </ul>
-</div>
+
+@await Component.InvokeAsync("FilterProducts")
+
 <div class="container-fluid">
     <div class="row">
         @foreach (var item in Model)

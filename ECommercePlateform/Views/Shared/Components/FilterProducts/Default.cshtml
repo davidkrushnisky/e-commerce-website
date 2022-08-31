@@ -1,0 +1,14 @@
+﻿@{
+}
+
+<div class="dropdown mb-3">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        Filter By Category
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li><a class="dropdown-item" asp-controller="Products" asp-action="ProductsOfCategory" asp-route-id=@ViewData["HeadphoneId"]>Headphones</a></li>
+        <li><a class="dropdown-item" asp-controller="Products" asp-action="ProductsOfCategory" asp-route-id=@ViewData["KeyboardId"]>Keyboards</a></li>
+        <li><a class="dropdown-item" asp-controller="Products" asp-action="ProductsOfCategory" asp-route-id=@ViewData["MonitorId"]>Monitors</a></li>
+        <li><a class="dropdown-item" asp-controller="Products" asp-action="Index">View All</a></li>
+    </ul>
+</div>

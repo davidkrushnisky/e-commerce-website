@@ -4,8 +4,13 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<div class="text-center mt-4">
+    <h2>Categories</h2>
+    <p>Select a category to view the products!</p>
+</div>
+@await Component.InvokeAsync("CategoryList")
 
+@*
 <p>
     <a asp-action="Create">Create New</a>
 </p>
@@ -34,7 +39,7 @@
                 @Html.DisplayFor(modelItem => item.Description)
             </td>
             <td>
-                @*Html.DisplayFor(modelItem => item.Picture)*@
+                Html.DisplayFor(modelItem => item.Picture)
                 <img src="data:image;base64,@System.Convert.ToBase64String(item.Picture)" />
             </td>
             <td>
@@ -46,3 +51,4 @@
 }
     </tbody>
 </table>
+*@
