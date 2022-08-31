@@ -4,6 +4,25 @@
     ViewData["Title"] = "Default";
 }
 
+<div class="container-fluid">
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-md-4">
+                <div class="card h-100" style="width: 18rem;">
+                    <img src="data:image;base64,@System.Convert.ToBase64String(item.Picture)" />
+                    <div class="card-body">
+                        <h5 class="card-title">@item.CategoryName</h5>
+                        <p class="card-text">@item.Description</p>
+                        <a asp-controller="Products" asp-action="ProductsOfCategory" asp-route-id=@item.CategoryId class="btn btn-primary">View Products</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+@*
 <h1>Default</h1>
 
 <p>
@@ -45,3 +64,4 @@
 }
     </tbody>
 </table>
+*@

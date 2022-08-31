@@ -176,7 +176,6 @@ namespace ECommercePlateform.Controllers
 
             //await applicationDbContext.ToListAsync().
 
-
             return View(productByCategory);
         }
 
