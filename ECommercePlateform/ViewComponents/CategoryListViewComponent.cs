@@ -9,13 +9,13 @@ namespace ECommercePlateform.ViewComponents
 {
     public class CategoryListViewComponent : ViewComponent
     {
-        //private static readonly ApplicationDbContext _context = new ApplicationDbContext(DbContextOptions < ApplicationDbContext > options);
+        private readonly Data.ApplicationDbContext db;
 
-        
+        public CategoryListViewComponent(Data.ApplicationDbContext context) => db = context;
         public IViewComponentResult Invoke()
         {
-            
-            return View();
+            var model = db.Categories.ToList();
+            return View(model);
         }
     }
 }

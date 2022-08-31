@@ -7,6 +7,7 @@ namespace ECommercePlateform.Controllers
 	public class HomeController : Controller
 	{
 		private readonly ILogger<HomeController> _logger;
+		private readonly Data.ApplicationDbContext context;
 
 		public HomeController(ILogger<HomeController> logger)
 		{
