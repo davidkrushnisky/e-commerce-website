@@ -4,22 +4,14 @@
 @model IEnumerable<ECommercePlateform.Models.Order>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Order history";
 }
 
 
+<h1>@ViewData["Title"]</h1>
 
-@*@if (User.IsInRole("Client")) 
+@if (User.IsInRole("Client"))
 {
-    
-}
-else 
-{*@
-<h1>Index</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
 <table class="table">
     <thead>
         <tr>
@@ -36,10 +28,10 @@ else
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
+    @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.TotalPrice)
+                @item.TotalPrice.ToString("C2")
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.OrderDate)
@@ -51,7 +43,11 @@ else
                 <a asp-action="Details" asp-route-id="@item.OrderId">Details</a>
             </td>
         </tr>
-}
+    }
     </tbody>
 </table>
-@*}*@
+}
+else 
+{
+    <a asp-area="Identity" asp-page="/Account/Login">Please sign in to view your order history.</a>
+}
