@@ -8,4 +8,7 @@ $(document).ready(function () {
     $("#cartIcon").click(function () {
         $(".cart").toggle();
     });
+
+    $("#addToCart").click(function () {
+        $(".cart").toggle();
 });

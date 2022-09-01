@@ -18,7 +18,7 @@
                         {
                             @if (@item.Quantity > 0)
                             {
-                                <a asp-controller="Cart" asp-action="AddOne" asp-route-id=@item.ProductId class="btn btn-primary">Add to cart</a>
+                                <a id="addToCart" asp-controller="Cart" asp-action="AddOne" asp-route-id=@item.ProductId class="btn btn-primary">Add to cart</a>
                             }
                             else
                             {
