@@ -1,43 +1,49 @@
-﻿@model FullCartViewModel
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<ApplicationUser> SignInManager
+@model FullCartViewModel
 @{
     ViewData["productQty"] = ViewData["Qty"];
 }
-
-<div class="container">
-@if (Model.CartProducts.Count > 0)
-{
-    @foreach (var item in Model.CartProducts) {
-    <div class="row justify-content-evenly">
-        <div class="col-4">
-                <img src="data:image;base64,@System.Convert.ToBase64String(item.Picture)" style="height: 15rem;" />
+if(SignInManager.IsSignedIn(User)) {
+    <div class="container">
+    @if (Model.CartProducts.Count > 0)
+    {
+        @foreach (var item in Model.CartProducts) {
+        <div class="row justify-content-evenly">
+            <div class="col-4">
+                    <img src="data:image;base64,@System.Convert.ToBase64String(item.Picture)" style="height: 15rem;" />
+            </div>
+            <div class="col-7">
+                <p>@item.Name</p>
+                <p>Color: @item.Color</p>
+                    <p>Quantity:</p>
+                    <a asp-controller="Cart" asp-action="RemoveOne" asp-route-id="@item.ProductId">-</a> 
+                    <p>@item.Quantity</p>
+                    @if (@ViewData["productQty"] == null) 
+                    {
+                        <span><a asp-controller="Cart" asp-action="AddOne" asp-route-id="@item.ProductId">+</a></span>
+                    }
+                    else
+                    {
+                        <span><a asp-controller="Cart" asp-action="AddOne" asp-route-id="@item.ProductId">No more stock</a></span>
+                    }
+                <p>Price: @item.Price.ToString("C2")</p>
+                <p>Total: @Model.CartProducts.Where(p => p.ProductId == item.ProductId).Sum(p => p.Quantity * p.Price).ToString("C2")</p>
+                <a asp-controller="Cart" asp-action="RemoveProduct" asp-route-id="@item.ProductId">Remove Product</a>
+            </div>
         </div>
-        <div class="col-7">
-            <p>@item.Name</p>
-            <p>Color: @item.Color</p>
-                <p>Quantity:</p>
-                <a asp-controller="Cart" asp-action="RemoveOne" asp-route-id="@item.ProductId">-</a> 
-                <p>@item.Quantity</p>
-                @if (@ViewData["productQty"] == null) 
-                {
-                    <span><a asp-controller="Cart" asp-action="AddOne" asp-route-id="@item.ProductId">+</a></span>
-                }
-                else
-                {
-                    <span><a asp-controller="Cart" asp-action="AddOne" asp-route-id="@item.ProductId">No more stock</a></span>
-                }
-            <p>Price: @item.Price.ToString("C2")</p>
-            <p>Total: @Model.CartProducts.Where(p => p.ProductId == item.ProductId).Sum(p => p.Quantity * p.Price).ToString("C2")</p>
-            <a asp-controller="Cart" asp-action="RemoveProduct" asp-route-id="@item.ProductId">Remove Product</a>
-        </div>
+            }
+        <p>Cart Total: @Model.TotalPrice.ToString("C2")</p>
+        <a asp-controller="Orders" asp-action="CreateProductList" asp-route-total="@Model.TotalPrice">Buy</a>
+    }
+    else
+    {
+        <p>Cart is currently empty.</p>
+    }
     </div>
-        }
-    <p>Cart Total: @Model.TotalPrice.ToString("C2")</p>
-    <a asp-controller="Orders" asp-action="CreateProductList" asp-route-total="@Model.TotalPrice">Buy</a>
 }
-else
+else 
 {
-    <p>Cart is currently empty.</p>
+<p>Please<a asp-area="Identity" asp-page="/Account/Login"> sign in </a>to use the cart.</p>
 }
-</div>
-
 

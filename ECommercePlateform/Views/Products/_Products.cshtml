@@ -1,11 +1,7 @@
-﻿@model IEnumerable<ECommercePlateform.Models.Product>
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<ApplicationUser> SignInManager
 
-@{
-    ViewData["Title"] = "ProductsOfCategory";
-}
-<h1>@Model.First().Category.CategoryName</h1>
-@await Html.PartialAsync("_Products")
-@*@await Component.InvokeAsync("FilterProducts")
+@await Component.InvokeAsync("FilterProducts")
 
 <div class="container-fluid">
     <div class="row">
@@ -18,17 +14,22 @@
                         <h5 class="card-title">@item.Name</h5>
                         <p class="card-text">@item.Description</p>
                         <a asp-controller="Products" asp-action="Details" asp-route-id=@item.ProductId class="btn btn-primary">View Details</a>
-                        @if (@item.Quantity > 0)
+                        @if (SignInManager.IsSignedIn(User))
                         {
-                            <a asp-controller="Cart" asp-action="AddOne" asp-route-id=@item.ProductId class="btn btn-primary">Add to cart</a>
-                        }
-                        else
-                        {
-                            <p>No more in stock.</p>
+                            @if (@item.Quantity > 0)
+                            {
+                                <a asp-controller="Cart" asp-action="AddOne" asp-route-id=@item.ProductId class="btn btn-primary">Add to cart</a>
+                            }
+                            else
+                            {
+                                <p>No more in stock.</p>
+                            }
                         }
                     </div>
                 </div>
             </div>
         }
     </div>
-</div>*@
+</div>
+
+    

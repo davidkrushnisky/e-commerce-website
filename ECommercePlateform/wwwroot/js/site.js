@@ -3,7 +3,6 @@
 
 // Write your JavaScript code.
 
-$(".cart")
 
 $(document).ready(function () {
     $("#cartIcon").click(function () {

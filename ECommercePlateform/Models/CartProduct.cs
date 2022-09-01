@@ -8,6 +8,7 @@
         public string Color { get; set; }
         public byte[] Picture { get; set; }
         public int Quantity { get; set; }
+        public int StockQty { get; set; }
         public decimal TotalPrice
         {
             get
@@ -26,6 +27,7 @@
             Color = product.Color;
             Picture = product.Pictures;
             Quantity = 1;
+            StockQty = product.Quantity -1;
         }
     }
 }

@@ -5,8 +5,8 @@
 }
 
 <h1>@ViewData["Title"]</h1>
-
-@await Component.InvokeAsync("FilterProducts")
+@await Html.PartialAsync("_Products")
+@*@await Component.InvokeAsync("FilterProducts")
 
 <div class="container-fluid">
     <div class="row">
@@ -16,16 +16,16 @@
                 <div class="card h-100" style="width: 18rem;">
                     <img src="data:image;base64,@System.Convert.ToBase64String(item.Pictures)" />
                     <div class="card-body">
-                        <h5 class="card-title">@item.Name)</h5>
-                        <p class="card-text">@item.Description)</p>
-                        <a asp-controller="Products" asp-action="Details" asp-route-id=@item.ProductId class="btn btn-primary">View Details</a>
+                        <h5 class="card-title">@item.Name</h5>
+                        <p class="card-text">@item.Description</p>
+                        <a class="btn btn-outline-info" role="button" asp-controller="Products" asp-action="Details" asp-route-id=@item.ProductId>View Details</a>
                         @if (@item.Quantity > 0) 
                         {
-                            <a asp-controller="Cart" asp-action="AddOne" asp-route-id=@item.ProductId class="btn btn-primary">Add to cart</a>
+                            <a class="btn btn-outline-info" role="button" asp-controller="Cart" asp-action="AddOne" asp-route-id=@item.ProductId>Add to cart</a>
                         }
                         else 
                         {
-                            <p>No more stock.</p>
+                            <button type="button" class="btn btn-outline-secondary" disabled>No more in stock</button>
                         }
                     </div>
                 </div>
@@ -33,3 +33,4 @@
         }
     </div>
 </div>
+*@

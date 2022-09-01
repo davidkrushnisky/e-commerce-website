@@ -187,6 +187,8 @@ namespace ECommercePlateform.Controllers
                     Pictures = item.Picture,
                     Description = productRef.Description
                 };
+                productRef.Quantity -= item.Quantity;
+                await _context.SaveChangesAsync();
                 finalProducts.Add(productToAdd);
             }
 

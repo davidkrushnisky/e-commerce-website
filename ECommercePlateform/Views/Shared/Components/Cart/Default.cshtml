@@ -14,11 +14,11 @@
                     <p>@item.Name</p>
                     <p>Color: @item.Color</p>
                     <p>Quantity:</p>
-                    <a class="btn btn-primary" role="button" asp-controller="Cart" asp-action="RemoveOne" asp-route-id="@item.ProductId">-</a>
+                    <a class="btn btn-outline-info" role="button" asp-controller="Cart" asp-action="RemoveOne" asp-route-id="@item.ProductId">-</a>
                     <p>@item.Quantity</p>
                     @if (@ViewData["productQty"] == null)
                     {
-                        <span><a class="btn btn-primary" role="button" asp-controller="Cart" asp-action="AddOne" asp-route-id="@item.ProductId">+</a></span>
+                        <span><a class="btn btn-outline-info" role="button" asp-controller="Cart" asp-action="AddOne" asp-route-id="@item.ProductId">+</a></span>
                     }
                     else
                     {
