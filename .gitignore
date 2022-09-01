@@ -6,3 +6,5 @@
 *.v2
 .vs/ECommercePlateform/v17/.suo
 *.v2
+ECommercePlateform/bin/Debug/net6.0/ECommercePlateform.dll
+ECommercePlateform/bin/Debug/net6.0/ECommercePlateform.pdb
