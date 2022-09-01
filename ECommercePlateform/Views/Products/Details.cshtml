@@ -33,7 +33,7 @@
             <br />
             <span><b>@Html.DisplayNameFor(model => model.Color):</b>&nbsp;<span>@Html.DisplayFor(model => model.Color)</span></span>
             <br />
-            <span><b>@Html.DisplayNameFor(model => model.Quantity):</b>&nbsp;<span>@Html.DisplayFor(model => model.Quantity)</span></span>
+            <span><b>@Html.DisplayNameFor(model => model.Quantity):</b>&nbsp;<span>@Model.Quantity</span></span>
             @if(@Model.Quantity == 0)
             {
                 <p style="color:red;">No more in stock</p>

@@ -16,22 +16,6 @@ namespace ECommercePlateform.ViewComponents
             CartViewModel cartView = new CartViewModel();
             cartView.CartProducts = cartList;
             cartView.TotalPrice = cartList.Sum(p => p.Quantity * p.Price);
-            /*
-            List<CartProduct> cartList = HttpContext.Session.GetJson<List<CartProduct>>("CartList");
-            CartViewModel cartView;
-
-            if (cartList == null || cartList.Count == 0)
-            {
-                cartView = null;
-            }
-            else
-            {
-                cartView = new()
-                {
-                    ProductCount = cartList.Sum(p => p.Quantity),
-                    TotalPrice = cartList.Sum(p => p.Quantity * p.Price)
-                };
-            }*/
             return View(cartView);
         }
     }

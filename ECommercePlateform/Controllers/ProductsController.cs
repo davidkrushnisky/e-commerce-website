@@ -37,7 +37,9 @@ namespace ECommercePlateform.Controllers
 
             var product = await _context.Products
                 .Include(p => p.Category)
+                .Include(p => p.Orders)
                 .FirstOrDefaultAsync(m => m.ProductId == id);
+                
             if (product == null)
             {
                 return NotFound();

@@ -6,31 +6,3 @@
 
 <h1>@ViewData["Title"]</h1>
 @await Html.PartialAsync("_Products")
-@*@await Component.InvokeAsync("FilterProducts")
-
-<div class="container-fluid">
-    <div class="row">
-        @foreach (var item in Model)
-        {
-            <div class="col-sm-3">
-                <div class="card h-100" style="width: 18rem;">
-                    <img src="data:image;base64,@System.Convert.ToBase64String(item.Pictures)" />
-                    <div class="card-body">
-                        <h5 class="card-title">@item.Name</h5>
-                        <p class="card-text">@item.Description</p>
-                        <a class="btn btn-outline-info" role="button" asp-controller="Products" asp-action="Details" asp-route-id=@item.ProductId>View Details</a>
-                        @if (@item.Quantity > 0) 
-                        {
-                            <a class="btn btn-outline-info" role="button" asp-controller="Cart" asp-action="AddOne" asp-route-id=@item.ProductId>Add to cart</a>
-                        }
-                        else 
-                        {
-                            <button type="button" class="btn btn-outline-secondary" disabled>No more in stock</button>
-                        }
-                    </div>
-                </div>
-            </div>
-        }
-    </div>
-</div>
-*@
