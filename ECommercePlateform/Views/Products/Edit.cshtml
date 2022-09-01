@@ -1,4 +1,5 @@
-﻿@model ECommercePlateform.Models.Product
+﻿@*@model ECommercePlateform.Models.Product*@
+@model ECommercePlateform.Controllers.ProductsController.ProductModel
 
 @{
     ViewData["Title"] = "Edit";
@@ -10,9 +11,9 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Edit">
+        <form asp-action="Edit" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="ProductId" />
+            @*<input type="hidden" asp-for="ProductId" />*@
             <div class="form-group">
                 <label asp-for="Name" class="control-label"></label>
                 <input asp-for="Name" class="form-control" />
@@ -33,9 +34,22 @@
                 <input asp-for="Quantity" class="form-control" />
                 <span asp-validation-for="Quantity" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-group"> 
                 <label asp-for="Pictures" class="control-label"></label>
-                <input asp-for="Pictures" class="form-control" />
+                @if (Model.Pictures != null)
+                {
+                    <img class="form-control" id="productPicture" style="width:350px;height:350px; object-fit:cover" src="data:image/*;base64,@(Convert.ToBase64String(Model.Pictures))">
+                }
+                else
+                {
+                    <img class="form-control" id="productPicture" style="width:350px;height:350px; object-fit:cover" src="">
+                }
+                <input type="file"
+                       accept=".png,.jpg,.jpeg,.gif,.tif"
+                       asp-for="Pictures"
+                       class="form-control"
+                       style="border:0px!important;padding: 0px;padding-top: 10px;padding-bottom: 30px;"
+                       onchange="document.getElementById('productPicture').src = window.URL.createObjectURL(this.files[0])" />
                 <span asp-validation-for="Pictures" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -49,7 +63,7 @@
                 <span asp-validation-for="CategoryId" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="submit" class="btn btn-primary" />
             </div>
         </form>
     </div>

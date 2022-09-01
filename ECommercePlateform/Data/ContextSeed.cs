@@ -46,7 +46,6 @@ namespace ECommercePlateform.Data
                     await userManager.CreateAsync(defaultAdmin, defaultPw);
                     await userManager.AddToRoleAsync(defaultAdmin, Enums.Roles.Admin.ToString());
                 }
-
             }
         }
 
@@ -69,8 +68,6 @@ namespace ECommercePlateform.Data
                 await userManager.CreateAsync(defaultClient, defaultPw);
                 await userManager.AddToRoleAsync(defaultClient, Enums.Roles.Client.ToString());
             }
-            
- 
         }
 
         public static async Task SeedDBAsync(ApplicationDbContext context)
@@ -83,19 +80,19 @@ namespace ECommercePlateform.Data
                 {
                     CategoryName = "Headphones",
                     Description = "",
-                    Picture = GetImage("media/Headphones/CategoryImage.jpg")
+                    Picture = GetImage("/media/Headphones/CategoryImage.jpg")
                 },
                 new Category
                 {
                     CategoryName = "Keyboards",
                     Description = "",
-                    Picture = GetImage("media/Keyboards/CategoryImage.jpg")
+                    Picture = GetImage("/media/Keyboards/CategoryImage.jpg")
                 },
                 new Category
                 {
                     CategoryName = "Monitors",
                     Description = "",
-                    Picture = GetImage("media/Monitors/CategoryImage.jpg")
+                    Picture = GetImage("/media/Monitors/CategoryImage.jpg")
                 }
             );
             context.SaveChanges();
@@ -104,16 +101,16 @@ namespace ECommercePlateform.Data
         if (!context.Products.Any())
         {
             //Headphones
-            byte[] image1 = GetImage("media/Headphones/Apple_AirPods_Pro.jpeg");
-            byte[] image2 = GetImage("media/Headphones/Bose_700.jpg");
-            byte[] image3 = GetImage("media/Headphones/Bose_QuietComfort_45.jpg");
-            byte[] image4 = GetImage("media/Headphones/Bowers_&_Wilkins_Px7_S2.jpg");
-            byte[] image5 = GetImage("media/Headphones/Grado_GT220.jpg");
-            byte[] image6 = GetImage("media/Headphones/Master_&_Dynamic_MW08.jpg");
-            byte[] image7 = GetImage("media/Headphones/Sennheiser_Momentum_4_Wireless.jpg");
-            byte[] image8 = GetImage("media/Headphones/Technics_EAH-A800.jpg");
-            byte[] image9 = GetImage("media/Headphones/Technics_EAH-AZ60.jpg");
-            byte[] image10 = GetImage("media/Headphones/Sony_WH-1000XM5.jpg");
+            byte[] image1 = GetImage("/media/Headphones/Apple_AirPods_Pro.jpeg");
+            byte[] image2 = GetImage("/media/Headphones/Bose_700.jpg");
+            byte[] image3 = GetImage("/media/Headphones/Bose_QuietComfort_45.jpg");
+            byte[] image4 = GetImage("/media/Headphones/Bowers_&_Wilkins_Px7_S2.jpg");
+            byte[] image5 = GetImage("/media/Headphones/Grado_GT220.jpg");
+            byte[] image6 = GetImage("/media/Headphones/Master_&_Dynamic_MW08.jpg");
+            byte[] image7 = GetImage("/media/Headphones/Sennheiser_Momentum_4_Wireless.jpg");
+            byte[] image8 = GetImage("/media/Headphones/Technics_EAH-A800.jpg");
+            byte[] image9 = GetImage("/media/Headphones/Technics_EAH-AZ60.jpg");
+            byte[] image10 = GetImage("/media/Headphones/Sony_WH-1000XM5.jpg");
 
             /*
             Collection<byte[]> airpodsPro = new Collection<byte[]>();
@@ -139,16 +136,16 @@ namespace ECommercePlateform.Data
             */
 
             //Keyboards
-            byte[] image1k = GetImage("media/Keyboards/Apple_Magic_Keyboard.jpg");
-            byte[] image2k = GetImage("media/Keyboards/Cherry_Stream_Desktop_Keyboard.jpg");
-            byte[] image3k = GetImage("media/Keyboards/Das_Keyboard_4_Professional.jpg");
-            byte[] image4k = GetImage("media/Keyboards/Logitech_Craft.jpg");
-            byte[] image5k = GetImage("media/Keyboards/Logitech_MX_Keys_Mini.jpg");
-            byte[] image6k = GetImage("media/Keyboards/Logitech_Mx_Mechanical.jpg");
-            byte[] image7k = GetImage("media/Keyboards/Razer_Deathstalker_V2_Pro.jpg");
-            byte[] image8k = GetImage("media/Keyboards/Razer_Huntsman_V2_Analog.jpg");
-            byte[] image9k = GetImage("media/Keyboards/Razer_Pro_Type_Ultra.jpg");
-            byte[] image10k = GetImage("media/Keyboards/Unicomp_New_Model_M.jpg");
+            byte[] image1k = GetImage("/media/Keyboards/Apple_Magic_Keyboard.jpg");
+            byte[] image2k = GetImage("/media/Keyboards/Cherry_Stream_Desktop_Keyboard.jpg");
+            byte[] image3k = GetImage("/media/Keyboards/Das_Keyboard_4_Professional.jpg");
+            byte[] image4k = GetImage("/media/Keyboards/Logitech_Craft.jpg");
+            byte[] image5k = GetImage("/media/Keyboards/Logitech_MX_Keys_Mini.jpg");
+            byte[] image6k = GetImage("/media/Keyboards/Logitech_Mx_Mechanical.jpg");
+            byte[] image7k = GetImage("/media/Keyboards/Razer_Deathstalker_V2_Pro.jpg");
+            byte[] image8k = GetImage("/media/Keyboards/Razer_Huntsman_V2_Analog.jpg");
+            byte[] image9k = GetImage("/media/Keyboards/Razer_Pro_Type_Ultra.jpg");
+            byte[] image10k = GetImage("/media/Keyboards/Unicomp_New_Model_M.jpg");
 
             /*
             Collection<byte[]> appleMagic = new Collection<byte[]>();
@@ -174,16 +171,16 @@ namespace ECommercePlateform.Data
             */
 
             //Monitors
-            byte[] image1m = GetImage("media/Monitors/Acer_Predator_X38.jpg");
-            byte[] image2m = GetImage("media/Monitors/Alienware_34_QD-OLED_(AW3423DW).jpg");
-            byte[] image3m = GetImage("media/Monitors/Dell_S2722DGM.jpg");
-            byte[] image4m = GetImage("media/Monitors/Dell_S3222DGM.jpg");
-            byte[] image5m = GetImage("media/Monitors/Gigabyte_M28U.png");
-            byte[] image6m = GetImage("media/Monitors/GigabyteG27Q.jpg");
-            byte[] image7m = GetImage("media/Monitors/LG_27GN950-B.jpg");
-            byte[] image8m = GetImage("media/Monitors/MSI_Oculux_NXG253R.jpg");
-            byte[] image9m = GetImage("media/Monitors/Samsung_Odyssey_Neo_G9.jpg");
-            byte[] image10m = GetImage("media/Monitors/Pixio_PX277_Prime.png");
+            byte[] image1m = GetImage("/media/Monitors/Acer_Predator_X38.jpg");
+            byte[] image2m = GetImage("/media/Monitors/Alienware_34_QD-OLED_(AW3423DW).jpg");
+            byte[] image3m = GetImage("/media/Monitors/Dell_S2722DGM.jpg");
+            byte[] image4m = GetImage("/media/Monitors/Dell_S3222DGM.jpg");
+            byte[] image5m = GetImage("/media/Monitors/Gigabyte_M28U.png");
+            byte[] image6m = GetImage("/media/Monitors/GigabyteG27Q.jpg");
+            byte[] image7m = GetImage("/media/Monitors/LG_27GN950-B.jpg");
+            byte[] image8m = GetImage("/media/Monitors/MSI_Oculux_NXG253R.jpg");
+            byte[] image9m = GetImage("/media/Monitors/Samsung_Odyssey_Neo_G9.jpg");
+            byte[] image10m = GetImage("/media/Monitors/Pixio_PX277_Prime.png");
 
             /*
             Collection<byte[]> predator = new Collection<byte[]>();
