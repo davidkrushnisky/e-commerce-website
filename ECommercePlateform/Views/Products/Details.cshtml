@@ -70,11 +70,12 @@
     @*Add to cart function*@
     @if (SignInManager.IsSignedIn(User))
     {
-        <a asp-action="#">Add to cart</a>
+        <a asp-controller="Cart" asp-action="AddOne" asp-route-id="@Model.ProductId">Add to cart</a>
     }
     else 
     {
         <a class="nav-link nav-link" asp-area="Identity" asp-page="/Account/Login">Please sign in to add to cart</a>
     }
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">View All Products</a>
+    <a asp-controller="Products" asp-action="ProductsOfCategory" asp-route-id="@Model.CategoryId">View @Model.Category.CategoryName Products</a>
 </div>

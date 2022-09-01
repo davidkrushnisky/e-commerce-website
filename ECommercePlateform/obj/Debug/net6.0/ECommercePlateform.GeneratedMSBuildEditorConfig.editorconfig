@@ -8,269 +8,305 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ECommercePlateform
 build_property.RootNamespace = ECommercePlateform
-build_property.ProjectDir = C:\Users\Caroline\Documents\John Abbott\Application Dev2\e-commerce-website\ECommercePlateform\
+build_property.ProjectDir = C:\Users\xMick\Documents\GitHub\e-commerce-website\ECommercePlateform\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Caroline\Documents\John Abbott\Application Dev2\e-commerce-website\ECommercePlateform
+build_property.MSBuildProjectDirectory = C:\Users\xMick\Documents\GitHub\e-commerce-website\ECommercePlateform
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/AccessDenied.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/AccessDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxDb25maXJtRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/ConfirmEmailChange.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/ConfirmEmailChange.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxDb25maXJtRW1haWxDaGFuZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/ExternalLogin.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/ExternalLogin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxFeHRlcm5hbExvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxGb3Jnb3RQYXNzd29yZENvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/Lockout.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/Lockout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2Nrb3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/Login.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/LoginWith2fa.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/LoginWith2fa.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbldpdGgyZmEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbldpdGhSZWNvdmVyeUNvZGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/Logout.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcQ2hhbmdlUGFzc3dvcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/Manage/DeletePersonalData.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/Manage/DeletePersonalData.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRGVsZXRlUGVyc29uYWxEYXRhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/Manage/Disable2fa.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/Manage/Disable2fa.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRGlzYWJsZTJmYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/Manage/DownloadPersonalData.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/Manage/DownloadPersonalData.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRG93bmxvYWRQZXJzb25hbERhdGEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/Manage/Email.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/Manage/Email.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRW5hYmxlQXV0aGVudGljYXRvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRXh0ZXJuYWxMb2dpbnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/Manage/GenerateRecoveryCodes.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/Manage/GenerateRecoveryCodes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcR2VuZXJhdGVSZWNvdmVyeUNvZGVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/Manage/Index.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/Manage/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/Manage/PersonalData.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/Manage/PersonalData.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcUGVyc29uYWxEYXRhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/Manage/ResetAuthenticator.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/Manage/ResetAuthenticator.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcUmVzZXRBdXRoZW50aWNhdG9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/Manage/SetPassword.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/Manage/SetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcU2V0UGFzc3dvcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/Manage/ShowRecoveryCodes.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/Manage/ShowRecoveryCodes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcU2hvd1JlY292ZXJ5Q29kZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcVHdvRmFjdG9yQXV0aGVudGljYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/Manage/_Layout.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/Manage/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX01hbmFnZU5hdi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/Manage/_StatusMessage.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/Manage/_StatusMessage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1N0YXR1c01lc3NhZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/Register.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3RlckNvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/ResendEmailConfirmation.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/ResendEmailConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNlbmRFbWFpbENvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/ResetPassword.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/ResetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNldFBhc3N3b3JkQ29uZmlybWF0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/_StatusMessage.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/_StatusMessage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfU3RhdHVzTWVzc2FnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Error.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/_ViewImports.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Views/Categories/Create.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Views/Cart/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Views/Categories/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Views/Categories/Delete.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Views/Categories/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Views/Categories/Details.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Views/Categories/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Views/Categories/Edit.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Views/Categories/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Views/Categories/Index.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Views/Categories/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Views/Categories/_Category.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Views/Categories/_Category.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xfQ2F0ZWdvcnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Views/Home/About.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Views/Home/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Views/Home/Contact.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Views/Home/Ciao.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDaWFvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Views/Home/Contact.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Views/Home/Index.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Views/Home/Hello.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIZWxsby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Views/Home/Privacy.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Views/Products/Create.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Views/Orders/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Views/Orders/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Views/Orders/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Views/Orders/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Views/Orders/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Views/Products/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Views/Products/Delete.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Views/Products/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Views/Products/Details.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Views/Products/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Views/Products/Edit.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Views/Products/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Views/Products/Index.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Views/Products/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Views/Products/ProductsOfCategory.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Views/Products/ProductsOfCategory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcUHJvZHVjdHNPZkNhdGVnb3J5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Views/Shared/Components/CategoryList/Default.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Views/Shared/Components/Cart/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ2FydFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Views/Shared/Components/CategoryList/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ2F0ZWdvcnlMaXN0XERlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Views/Shared/Components/FilterProducts/Default.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Views/Shared/Components/FilterProducts/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcRmlsdGVyUHJvZHVjdHNcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Views/Shared/Error.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Views/Shared/_Category.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Views/Shared/_Category.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DYXRlZ29yeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Views/_ViewImports.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Views/_ViewStart.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Caroline/Documents/John Abbott/Application Dev2/e-commerce-website/ECommercePlateform/Views/Shared/_Layout.cshtml]
+[C:/Users/xMick/Documents/GitHub/e-commerce-website/ECommercePlateform/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-t8bwfvdkdw

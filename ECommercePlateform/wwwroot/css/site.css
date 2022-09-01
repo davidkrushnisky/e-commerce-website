@@ -16,3 +16,14 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.cart 
+{
+    position: absolute;
+    top: 59px;
+    width: 100%;
+    right: 0;
+    max-width: 300px;
+    display: none;
+    background: #ccc;
+}
