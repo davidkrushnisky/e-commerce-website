@@ -4,7 +4,7 @@
 @{
     ViewData["productQty"] = ViewData["Qty"];
 }
-if(SignInManager.IsSignedIn(User)) {
+@if(SignInManager.IsSignedIn(User)) {
     <div class="container">
     @if (Model.CartProducts.Count > 0)
     {
