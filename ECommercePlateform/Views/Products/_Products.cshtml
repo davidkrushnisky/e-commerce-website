@@ -7,12 +7,12 @@
     <div class="row">
         @foreach (var item in Model)
         {
-            <div class="col-sm-3">
-                <div class="card h-100 card-border" style="width: 18rem;">
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3" style="margin-bottom: 30px">
+                <div class="card h-100 card-border card-shadow">
                     <img src="data:image;base64,@System.Convert.ToBase64String(item.Pictures)" />
                     <div class="card-body">
                         <h5 class="card-title">@item.Name</h5>
-                        <p class="card-text">@item.Description</p>
+                        <p class="card-text card-overflow">@item.Description</p>
                         <a asp-controller="Products" asp-action="Details" asp-route-id=@item.ProductId class="btn btn-primary">View Details</a>
                         @if (SignInManager.IsSignedIn(User))
                         {
