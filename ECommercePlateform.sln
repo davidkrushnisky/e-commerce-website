@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECommercePlateform", "EComm
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Recipe_DavidKrushnisky", "..\Recipe_DavidKrushnisky\Recipe_DavidKrushnisky\Recipe_DavidKrushnisky.csproj", "{406BA51B-0859-4CF5-A573-E3C8E3B486F0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContosoUniversity_DavidKrushnisky", "..\ContosoUniversity_DavidKrushnisky\ContosoUniversity_DavidKrushnisky\ContosoUniversity_DavidKrushnisky.csproj", "{42E6078B-6F84-4E1B-8E45-3384C8533154}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InClass2Identity", "..\InClass2Identity\InClass2Identity\InClass2Identity.csproj", "{06483F49-C490-4FA2-A3F6-C32D3373C7FA}"
 EndProject
 Global
@@ -25,10 +23,6 @@ Global
 		{406BA51B-0859-4CF5-A573-E3C8E3B486F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{406BA51B-0859-4CF5-A573-E3C8E3B486F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{406BA51B-0859-4CF5-A573-E3C8E3B486F0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{42E6078B-6F84-4E1B-8E45-3384C8533154}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{42E6078B-6F84-4E1B-8E45-3384C8533154}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{42E6078B-6F84-4E1B-8E45-3384C8533154}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{42E6078B-6F84-4E1B-8E45-3384C8533154}.Release|Any CPU.Build.0 = Release|Any CPU
 		{06483F49-C490-4FA2-A3F6-C32D3373C7FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{06483F49-C490-4FA2-A3F6-C32D3373C7FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06483F49-C490-4FA2-A3F6-C32D3373C7FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
