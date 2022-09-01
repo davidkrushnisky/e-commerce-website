@@ -13,8 +13,14 @@ html {
   min-height: 100%;
 }
 
+header{
+    background-color: aqua;
+}
+
+
 body {
   margin-bottom: 60px;
+  background-color: gainsboro;
 }
 
 .cart {
@@ -27,11 +33,4 @@ body {
     max-width: 300px;
     display: none;
     background: #e0f2ff;
-}
-
-.card-border {
-    border-color: #5340e1;
-    border-style: solid;
-    border-width: thin;
-}
 }
