@@ -23,7 +23,7 @@
             @Html.DisplayFor(model => model.OrderDate)
         </dd>
         <dd class="col-sm-10">
-            <table class="table">
+            <table class="table table-striped">
                 <tr>
                     <th>Product Name</th>
                     <th>Color</th>
@@ -37,7 +37,7 @@
                 {
                     <tr>
                         <td>
-                            @item.Name
+                            <a asp-controller="Products" asp-action="Details" asp-route-id="@item.ProductId">@item.Name</a>
                         </td>
                         <td>
                             @item.Color
@@ -52,7 +52,7 @@
                             @(item.Quantity * item.Price)
                         </td>
                         <td>
-                            <img src="data:image;base64,@System.Convert.ToBase64String(item.Pictures)" />
+                            <img src="data:image;base64,@System.Convert.ToBase64String(item.Pictures)" class="img-fluid" style="max-width:300px;" />
                         </td>
                     </tr>
                 }

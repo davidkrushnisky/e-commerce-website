@@ -98,14 +98,14 @@ namespace ECommercePlateform.Controllers
             {
                 HttpContext.Session.SetJson("CartList", cartList);
             }
-            return RedirectToAction("Index");
+            return Redirect(Request.Headers["Referer"].ToString());
         }
         [Authorize(Roles = "Client")]
         public async Task<IActionResult> RemoveAll(int id)
         {
             HttpContext.Session.Remove("CartList");
             
-            return RedirectToAction("Index");
+            return Redirect(Request.Headers["Referer"].ToString());
         }
     }
 }
