@@ -17,7 +17,7 @@
 </head>
 <body>
     <header style="background-color:#4444ef">
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3">
+        <nav id="linkColor" class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
                     <img src="/media/logo.png" width="45" height="40" class="d-inline-block align-text-top" />
@@ -30,24 +30,24 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="About">About us</a>
+                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="About">About us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Contact">Contact us</a>
+                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Contact">Contact us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Categories" asp-action="Index">Category</a>
+                            <a class="nav-link text-light" asp-area="" asp-controller="Categories" asp-action="Index">Category</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Products" asp-action="Index">All Products</a>
+                            <a class="nav-link text-light" asp-area="" asp-controller="Products" asp-action="Index">All Products</a>
                         </li>
                         @if (User.IsInRole("Admin"))
                         {
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Products" asp-action="Create">Add Product</a>
+                                <a class="nav-link text-light" asp-area="" asp-controller="Products" asp-action="Create">Add Product</a>
                             </li>
                         }
                     </ul>

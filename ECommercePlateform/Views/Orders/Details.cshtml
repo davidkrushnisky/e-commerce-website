@@ -7,14 +7,13 @@
 <h1>@ViewData["Title"]</h1>
 
 <div>
-    <h4>Order</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.TotalPrice)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.TotalPrice)
+            @Model.TotalPrice.ToString("C2")
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.OrderDate)
@@ -23,8 +22,8 @@
             @Html.DisplayFor(model => model.OrderDate)
         </dd>
         <dd class="col-sm-10">
-            <table class="table table-striped">
-                <tr>
+            <table class="table table-light table-striped">
+                <tr class="table-dark">
                     <th>Product Name</th>
                     <th>Color</th>
                     <th>Quantity</th>
@@ -61,5 +60,5 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Index">Back to order history</a>
+    <a class="btn btn-info" role="button" asp-action="Index">Back to order history</a>
 </div>

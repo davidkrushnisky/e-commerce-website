@@ -6,16 +6,16 @@
     {
         @foreach (var item in Model.CartProducts)
         {
-            <div class="row justify-content-evenly">
+            <div class="row justify-content-evenly" style="border-bottom:1px solid #000; padding-bottom: 20px; margin-bottom: 20px">
                 <div class="col-4 mt-2">
                     <img src="data:image;base64,@System.Convert.ToBase64String(item.Picture)" style="width: 125px;" />
                 </div>
                 <div class="col-7  mt-2">
-                    <p style="font-weight: bold;">@item.Name</p>
-                    <p>Color: @item.Color</p>
-                    <p>Quantity:</p>
-                    <span><a class="btn btn-primary" role="button" asp-controller="Cart" asp-action="RemoveOne" asp-route-id="@item.ProductId">-</a></span>
-                    <span>@item.Quantity</span>
+                    <u style="font-weight: bold;">@item.Name</u>
+                    <p><b>Color: @item.Color</b></p>
+                    <b>Quantity:</b>
+                    <span ><a class="btn btn-primary" role="button" asp-controller="Cart" asp-action="RemoveOne" asp-route-id="@item.ProductId">-</a></span>
+                    <span style="background:white; padding: 6px 10px">@item.Quantity</span>
                     @if (@ViewData["productQty"] == null)
                     {
                         <span><a class="btn btn-primary" role="button" asp-controller="Cart" asp-action="AddOne" asp-route-id="@item.ProductId">+</a></span>

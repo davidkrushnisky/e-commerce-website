@@ -12,9 +12,9 @@
 
 @if (User.IsInRole("Client"))
 {
-<table class="table">
+    <table class="table table-light table-striped ">
     <thead>
-        <tr>
+        <tr class="table-dark">
             <th>
                 @Html.DisplayNameFor(model => model.TotalPrice)
             </th>
