@@ -9,6 +9,7 @@ namespace ECommercePlateform.Models
         public string UserId { get; set; }
         [Display(Name = "Total Price")]
         public decimal TotalPrice { get; set; }
+        [Display(Name = "Order Date")]
         public DateTime OrderDate { get; set; }
         public ApplicationUser User { get; set; }
         //many-to-many

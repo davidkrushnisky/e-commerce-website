@@ -177,8 +177,8 @@ namespace ECommercePlateform.Controllers
 
             foreach (CartProduct item in cartList)
             {
-                Product productRef = product.FirstOrDefault(p => p.ProductId == item.ProductId);
-                Product productToAdd = new()
+                Product productRef = await _context.Products.FindAsync(item.ProductId);
+                /*Product productToAdd = new()
                 {
                     Name = item.Name,
                     Price = item.Price,
@@ -186,10 +186,11 @@ namespace ECommercePlateform.Controllers
                     Quantity = item.Quantity,
                     Pictures = item.Picture,
                     Description = productRef.Description
-                };
+                };*/
                 productRef.Quantity = item.StockQty;
+
                 await _context.SaveChangesAsync();
-                finalProducts.Add(productToAdd);
+                finalProducts.Add(productRef);
             }
 
 

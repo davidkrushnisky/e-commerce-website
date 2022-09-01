@@ -17,12 +17,12 @@
         <td>&nbsp;</td>  
         <td style="vertical-align: top; text-align:left;">
         <span><b>@Html.DisplayNameFor(model => model.Description):</b></br><span>@Html.DisplayFor(model => model.Description)</span></span>
-        </br>    
-        <b>@Html.DisplayNameFor(model => model.Price): $</b>
+        </br>
+            <b>@Html.DisplayNameFor(model => model.Price):</b>
             @if (SignInManager.IsSignedIn(User))
             {
                 <span>
-                    @Html.DisplayFor(model => model.Price)
+                    @Model.Price.ToString("C2")
                 </span>
             }
             else {
@@ -34,65 +34,15 @@
             <span><b>@Html.DisplayNameFor(model => model.Color):</b>&nbsp;<span>@Html.DisplayFor(model => model.Color)</span></span>
             <br />
             <span><b>@Html.DisplayNameFor(model => model.Quantity):</b>&nbsp;<span>@Html.DisplayFor(model => model.Quantity)</span></span>
+            @if(@Model.Quantity == 0)
+            {
+                <p style="color:red;">No more in stock</p>
+            }
             <br />
             <span><b>@Html.DisplayNameFor(model => model.Category)</b>&nbsp;<span>@Html.DisplayFor(model => model.Category.CategoryName)</span></span>
         </td>
     </tr>
 </table>
-
-@*
-<h1>@Html.DisplayFor(model => model.Name)</h1>
-<div>
-
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Price)
-        </dt>
-        @if (SignInManager.IsSignedIn(User))
-        {
-            <dd class = "col-sm-10">
-                @Html.DisplayFor(model => model.Price)
-            </dd>
-        }
-        else {
-            <dd class="col-sm-10">
-                <a class="nav-link nav-link" asp-area="Identity" asp-page="/Account/Login">Please sign in to view the price.</a>
-            </dd>
-        }
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Color)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Color)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Quantity)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Quantity)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Pictures)
-        </dt>
-        <dd class = "col-sm-10">
-             <img src="data:image;base64,@System.Convert.ToBase64String(@Model.Pictures)" style="border:solid; height:300px" />
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Description)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Description)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Category)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Category.CategoryId)
-        </dd>
-    </dl>
-</div>
-*@
 <div>
     @*Add to cart function*@
     @if (User.IsInRole("Client"))
@@ -109,5 +59,5 @@
         <a class="nav-link nav-link" asp-area="Identity" asp-page="/Account/Login" class="btn btn-primary">Please sign in to add to cart</a>
     }
     <a asp-action="Index" class="btn btn-secondary">View All Products</a>
-    <a asp-controller="Products" asp-action="ProductsOfCategory" asp-route-id="@Model.CategoryId" class="btn btn-info">View @Model.Category.CategoryName Products</a>
+    <a asp-controller="Products" asp-action="ProductsOfCategory" asp-route-id="@Model.CategoryId" class="btn btn-info">View @Model.Category.CategoryName</a>
 </div>
