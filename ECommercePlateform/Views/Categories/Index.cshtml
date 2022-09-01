@@ -9,7 +9,7 @@
     <p>Select a category to view the products!</p>
 </div>
 @await Component.InvokeAsync("CategoryList")
-
+<a asp-controller="Categories" asp-action="Create" class="btn btn-primary">Add a New Category</a>
 @*
 <p>
     <a asp-action="Create">Create New</a>

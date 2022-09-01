@@ -10,7 +10,7 @@
             <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3" style="margin-bottom: 30px">
                 <div class="card h-100 card-border card-shadow">
                     <img src="data:image;base64,@System.Convert.ToBase64String(item.Pictures)" />
-                    <div class="card-body">
+                    <div class="card-body d-flex flex-column">
                         <h5 class="card-title">@item.Name</h5>
                         <p class="card-text card-overflow">@item.Description</p>
                         <a asp-controller="Products" asp-action="Details" asp-route-id=@item.ProductId class="btn btn-primary">View Details</a>
@@ -25,6 +25,7 @@
                                 <p>No more in stock.</p>
                             }
                         }
+                        <a asp-controller="Products" asp-action="Details" asp-route-id=@item.ProductId class="btn btn-primary">View Details</a>
                     </div>
                 </div>
             </div>
