@@ -8,46 +8,33 @@
         {
             <div class="row justify-content-evenly">
                 <div class="col-4 mt-2">
-                    <img src="data:image;base64,@System.Convert.ToBase64String(item.Picture)" style="height: 5rem;" />
+                    <img src="data:image;base64,@System.Convert.ToBase64String(item.Picture)" style="width: 125px;" />
                 </div>
-                <div class="col-7 mt-2">
-                    <p>@item.Name</p>
+                <div class="col-7  mt-2">
+                    <p style="font-weight: bold;">@item.Name</p>
                     <p>Color: @item.Color</p>
                     <p>Quantity:</p>
-                    <a class="btn btn-outline-info" role="button" asp-controller="Cart" asp-action="RemoveOne" asp-route-id="@item.ProductId">-</a>
-                    <p>@item.Quantity</p>
+                    <span><a class="btn btn-primary" role="button" asp-controller="Cart" asp-action="RemoveOne" asp-route-id="@item.ProductId">-</a></span>
+                    <span>@item.Quantity</span>
                     @if (@ViewData["productQty"] == null)
                     {
-                        <span><a class="btn btn-outline-info" role="button" asp-controller="Cart" asp-action="AddOne" asp-route-id="@item.ProductId">+</a></span>
+                        <span><a class="btn btn-primary" role="button" asp-controller="Cart" asp-action="AddOne" asp-route-id="@item.ProductId">+</a></span>
                     }
                     else
                     {
                         <span><a asp-controller="Cart" asp-action="AddOne" asp-route-id="@item.ProductId">No more stock</a></span>
                     }
-                    <p>Price: @item.Price.ToString("C2")</p>
-                    <p>Total: @Model.CartProducts.Where(p => p.ProductId == item.ProductId).Sum(p => p.Quantity * p.Price).ToString("C2")</p>
-                    <a asp-controller="Cart" asp-action="RemoveProduct" asp-route-id="@item.ProductId">Remove Product</a>
+                    <p style="font-weight: bold;">Price: @item.Price.ToString("C2")</p>
+                    <p style="font-weight: bold;">Total: @Model.CartProducts.Where(p => p.ProductId == item.ProductId).Sum(p => p.Quantity * p.Price).ToString("C2")</p>
+                    <a class="btn btn-warning" asp-controller="Cart" asp-action="RemoveProduct" asp-route-id="@item.ProductId">Remove Product</a>
                 </div>
             </div>
         }
-        <p>Cart Total: @Model.TotalPrice.ToString("C2")</p>
-        <a asp-controller="Orders" asp-action="CreateProductList" asp-route-total="@Model.TotalPrice">Buy</a>
+        <p style="font-weight: bold;">Cart Total: @Model.TotalPrice.ToString("C2")</p>
+        <a class="btn btn-primary" asp-controller="Cart" asp-action="Index">Checkout Page</a>
     }
     else
     {
         <p>Cart is currently empty.</p>
     }
 </div>
-
-@*<div >
-    @if (Model != null)
-    {
-        <p>Quantity: @Model.ProductCount</p>
-        <p>Total: @Model.TotalPrice</p>
-        <a asp-controller="Cart" asp-action="Index">Checkout</a>
-    }
-    else
-    {
-    <p>You cart is currently empty.</p>
-    }
-</div>*@
