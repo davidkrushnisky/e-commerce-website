@@ -45,7 +45,12 @@
       "ProjectGuid": "06483f49-c490-4fa2-a3f6-c32d3373c7fa",
       "DisplayName": "InClass2Identity",
       "ColorIndex": 7
+    },
+    "6c2bf0b2-01a4-4a31-bd11-23d07454d7c3": {
+      "ProjectGuid": "6c2bf0b2-01a4-4a31-bd11-23d07454d7c3",
+      "DisplayName": "TagHelper_DavidKrushnisky",
+      "ColorIndex": 8
     }
   },
-  "NextColorIndex": 8
+  "NextColorIndex": 9
 }
