@@ -7,18 +7,18 @@
         @foreach (var item in Model.CartProducts)
         {
             <div class="row justify-content-evenly">
-                <div class="col-4">
-                    <img src="data:image;base64,@System.Convert.ToBase64String(item.Picture)" style="height: 15rem;" />
+                <div class="col-4 mt-2">
+                    <img src="data:image;base64,@System.Convert.ToBase64String(item.Picture)" style="height: 5rem;" />
                 </div>
-                <div class="col-7">
+                <div class="col-7 mt-2">
                     <p>@item.Name</p>
                     <p>Color: @item.Color</p>
                     <p>Quantity:</p>
-                    <a asp-controller="Cart" asp-action="RemoveOne" asp-route-id="@item.ProductId">-</a>
+                    <a class="btn btn-primary" role="button" asp-controller="Cart" asp-action="RemoveOne" asp-route-id="@item.ProductId">-</a>
                     <p>@item.Quantity</p>
                     @if (@ViewData["productQty"] == null)
                     {
-                        <span><a asp-controller="Cart" asp-action="AddOne" asp-route-id="@item.ProductId">+</a></span>
+                        <span><a class="btn btn-primary" role="button" asp-controller="Cart" asp-action="AddOne" asp-route-id="@item.ProductId">+</a></span>
                     }
                     else
                     {

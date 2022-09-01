@@ -3,7 +3,7 @@
 @{
     ViewData["Title"] = "ProductsOfCategory";
 }
-
+<h1>@Model.First().Category.CategoryName</h1>
 @await Component.InvokeAsync("FilterProducts")
 
 <div class="container-fluid">

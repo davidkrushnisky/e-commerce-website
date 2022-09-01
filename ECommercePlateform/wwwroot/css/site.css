@@ -17,13 +17,14 @@ body {
   margin-bottom: 60px;
 }
 
-.cart 
-{
+.cart {
     position: absolute;
     top: 59px;
     width: 100%;
+    border-color: #978787;
+    border-style: double;
     right: 0;
     max-width: 300px;
     display: none;
-    background: #ccc;
+    background: #e0f2ff;
 }
