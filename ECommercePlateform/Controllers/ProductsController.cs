@@ -60,14 +60,40 @@ namespace ECommercePlateform.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("ProductId,Name,Price,Color,Quantity,Pictures,Description,CategoryId")] Product product)
         {
-            if (ModelState.IsValid)
+
+            if (Request.Form.Files.Count > 0)
             {
+                IFormFile file = Request.Form.Files.FirstOrDefault();
+                using (var dataStream = new MemoryStream())
+                {
+                    await file.CopyToAsync(dataStream);
+                    product.Pictures = dataStream.ToArray();
+                    await _context.SaveChangesAsync();
+                }
+            }
+
+            //if (ModelState.IsValid)
+            //{
                 _context.Add(product);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
-            }
-            ViewData["CategoryId"] = new SelectList(_context.Categories, "CategoryId", "CategoryId", product.CategoryId);
-            return View(product);
+            //}
+            //ViewData["CategoryId"] = new SelectList(_context.Categories, "CategoryId", "CategoryId", product.CategoryId);
+            //return View(product);
+        }
+
+        [BindProperty]
+        public ProductModel Input { get; set; }
+
+        public class ProductModel
+        {
+            public string Name { get; set; }
+            public decimal Price { get; set; }
+            public string Color { get; set; }
+            public int Quantity { get; set; }
+            public byte[]? Pictures { get; set; }
+            public string Description { get; set; }
+            public int? CategoryId { get; set; }
         }
 
         // GET: Products/Edit/5
@@ -83,45 +109,63 @@ namespace ECommercePlateform.Controllers
             {
                 return NotFound();
             }
+
+            Input = new ProductModel
+            {
+                Name = product.Name,
+                Price = product.Price,
+                Color = product.Color,
+                Quantity = product.Quantity,
+                Description = product.Description,
+                Pictures = product.Pictures,
+                CategoryId = product.CategoryId,
+            };
+
             ViewData["CategoryId"] = new SelectList(_context.Categories, "CategoryId", "CategoryId", product.CategoryId);
-            return View(product);
+            return View(Input) ;
         }
 
-        // POST: Products/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ProductId,Name,Price,Color,Quantity,Pictures,Description,CategoryId")] Product product)
+        public async Task<IActionResult> Edit(int id, ProductModel product)
         {
-            if (id != product.ProductId)
+            try
             {
-                return NotFound();
-            }
+                //if (ModelState.IsValid)
+                //{
+                Product? oldProduct = await _context.Products.FindAsync(id);
+                if (oldProduct == null)
+                {
+                    return NotFound();
+                }
+                oldProduct.Name = product.Name;
+                oldProduct.Price = product.Price;
+                oldProduct.Color = product.Color;
+                oldProduct.Quantity = product.Quantity;
 
-            if (ModelState.IsValid)
-            {
-                try
+                if (Request.Form.Files.Count > 0)
                 {
-                    _context.Update(product);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!ProductExists(product.ProductId))
+                    IFormFile file = Request.Form.Files.FirstOrDefault();
+                    using (var dataStream = new MemoryStream())
                     {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
+                        await file.CopyToAsync(dataStream);
+                        oldProduct.Pictures = dataStream.ToArray();
+                        await _context.SaveChangesAsync();
                     }
                 }
+                oldProduct.Description = product.Description;
+                oldProduct.CategoryId = product.CategoryId;
+                await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
+
             }
-            ViewData["CategoryId"] = new SelectList(_context.Categories, "CategoryId", "CategoryId", product.CategoryId);
-            return View(product);
-        }
+            catch (Exception ex)
+            {
+                return View(product);
+            }
+            //ViewData["CategoryId"] = new SelectList(_context.Categories, "CategoryId", "CategoryId", product.CategoryId);
+            //return View(product);
+        } 
 
         // GET: Products/Delete/5
         public async Task<IActionResult> Delete(int? id)

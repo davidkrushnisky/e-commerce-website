@@ -9,7 +9,7 @@
         @foreach (var item in Model)
         {
             <div class="col-md-4">
-                <div class="card h-100" style="width: 25rem;">
+                <div class="card h-100" style="width: 20rem;">
                     <img src="data:image;base64,@System.Convert.ToBase64String(item.Picture)" style="height: 20rem;"/>
                     <div class="card-body">
                         <h5 class="card-title">@item.CategoryName</h5>
