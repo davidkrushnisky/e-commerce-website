@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Mflby3ZdHDKZ+tSwdKAlkCWpq43KPt/fNt2TiKadLKs=",
+  "Hash": "oSN5sklWZt6AuxUWCW6grYxCN10KX5+5poGqV211pn8=",
   "Source": "ECommercePlateform",
   "BasePath": "_content/ECommercePlateform",
   "Mode": "Default",
@@ -2786,6 +2786,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\media\\shopping-cart.png"
+    },
+    {
+      "Identity": "C:\\Users\\Caroline\\Documents\\John Abbott\\Application Dev2\\e-commerce-website\\ECommercePlateform\\wwwroot\\media\\supersonicLogo.png",
+      "SourceId": "ECommercePlateform",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Caroline\\Documents\\John Abbott\\Application Dev2\\e-commerce-website\\ECommercePlateform\\wwwroot\\",
+      "BasePath": "_content/ECommercePlateform",
+      "RelativePath": "media/supersonicLogo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\media\\supersonicLogo.png"
     },
     {
       "Identity": "C:\\Users\\Caroline\\Documents\\John Abbott\\Application Dev2\\e-commerce-website\\ECommercePlateform\\wwwroot\\media\\Welcome.jpg",
