@@ -1,0 +1,53 @@
+﻿@model CartViewModel
+
+@{
+    ViewData["Title"] = "Cart Overview";
+}
+
+@if(Model.CartItems.Count > 0)
+{
+    <table class="table">
+        <tr>
+            <th>Product</th>
+            <th>Color</th>
+            <th>Image</th>
+            <th>Quantity</th>
+            <th></th>
+            <th>Price</th>
+            <th>Total</th>
+            <th>Total 2</th>
+        </tr>
+        @foreach(var item in Model.CartItems)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Color</td>
+                <td>
+                    <img src="data:image;base64,@System.Convert.ToBase64String(item.Picture)" style="width: 400px;" class="img-fluid" />
+                    </td>
+                <td>@item.Count</td>
+                <td>
+                    <a class="btn btn-primary btn-sm" asp-action="Add" asp-route-id="@item.ItemId">+</a>
+                    <a class="btn btn-info btn-sm" asp-action="Decrease" asp-route-id="@item.ItemId">+</a>
+                    <a class="btn btn-danger btn-sm" asp-action="Remove" asp-route-id="@item.ItemId">+</a>
+                </td>
+                <td>@item.Price.ToString("C2")</td>
+                <td>@Model.CartItems.Where(x => x.ItemId == item.ItemId).Sum(x => x.Count * x.Price)ToString("C2")</td>
+                <td>@item.TotalPrice</td>
+            </tr>
+        }
+        <tr>
+            <td class="text-right" coldpsn="4">Grand Total: @Model.TotalPrice.ToString("C2")</td>
+        </tr>
+        <tr>
+            <td class="text-right" coldpsn="4">
+                <a class="btn btn-danger" asp-action="Clear">Clear Cart></a>
+                <a class="btn btn-primary" href=#>Checkout></a>
+            </td>
+        </tr>
+    </table>
+}else
+{
+    <h3 class="display-4 text-center">Your cart is empty</h3>
+}
+

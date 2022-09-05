@@ -5,7 +5,14 @@
 }
 
 <h1>@ViewData["Title"]</h1>
-
+<div class="row">
+    <div class="col-4">
+        <partial name="_NotificationPartial"/>
+    </div>
+    <div class="col-3 bg-success mt-3 text-white">
+                    @await Component.InvokeAsync("Cart")
+    </div>
+</div>
 @await Component.InvokeAsync("FilterProducts")
 
 <div class="container-fluid">
@@ -19,7 +26,7 @@
                         <h5 class="card-title">@item.Name)</h5>
                         <p class="card-text">@item.Description)</p>
                         <a asp-controller="Products" asp-action="Details" asp-route-id=@item.ProductId class="btn btn-primary">View Details</a>
-                        <a href="#" class="btn btn-primary">Add to cart</a>
+                        <a class="btn btn-primary" asp-controller="Cart" asp-action="Add" asp-route-id=@item.ProductId>Add to cart</a>
                     </div>
                 </div>
             </div>

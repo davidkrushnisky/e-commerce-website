@@ -1,0 +1,25 @@
+﻿@model SmallCartViewModel
+
+@*<div class="container cart">*@
+    @if (Model.CartItems.Count > 0)
+    {
+        @foreach (var item in Model.CartItems)
+        {
+                    <img src="data:image;base64,@System.Convert.ToBase64String(item.Picture)" style="width: 125px;" />
+                    <u style="font-weight: bold;">@item.Name</u>
+                    <p><b>Color: @item.Color</b></p>
+                    <b>Quantity:</b>
+                    <span ><a class="btn btn-primary" role="button" asp-controller="Cart" asp-action="RemoveOne" asp-route-id="@item.ItemId">-</a></span>
+                    <span style="background:white; padding: 6px 10px">@item.Count</span>;
+                    <p style="font-weight: bold;">Price: @item.Price.ToString("C2")</p>
+                    <p style="font-weight: bold;">Total: @Model.CartItems.Where(p => p.ItemId == item.ItemId).Sum(p => p.Count * p.Price).ToString("C2")</p>
+                    <a class="btn btn-warning" role="button" asp-controller="Cart" asp-action="RemoveProduct" asp-route-id="@item.ItemId">Remove Product</a>
+        }
+        <p style="font-weight: bold;">Cart Total: @Model.TotalPrice.ToString("C2")</p>
+        <a class="btn btn-primary" asp-controller="Cart" asp-action="Index">Checkout Page</a>
+    }
+    else
+    {
+        <p>Cart is currently empty.</p>
+    }
+@*</div>*@
