@@ -48,6 +48,9 @@
             @RenderBody()
         </main>
     </div>
+    <div>
+        @await Component.InvokeAsync("Cart")
+    </div>
 
     <footer class="border-top footer text-muted">
         <div class="container">
